@@ -33,3 +33,17 @@ def my_transpose(matrix)
     end
     res
 end
+
+def stock_picker(array)
+    combo = []
+    max = 0
+    (0...array.length).each do |i|
+        (i + 1...array.length).each do |i2|
+            if array[i2] - array[i] > max
+                max = array[i2] - array[i]
+                combo = [i, i2]
+            end
+        end
+    end
+    combo
+end

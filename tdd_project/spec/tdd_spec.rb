@@ -33,12 +33,16 @@ describe "my_transpose" do
 end
 
 describe "stock_picker" do
-    context "when index of day 2 less than the index of day 1" do
-        it "should raise InvalidArgumentError" do
-            expect{stock_picker([0, 1, 3, 2, 10])}.to_not eq([4, 0]) 
-        end 
-    end 
+    context "we are aiming for the greatest profit between days. Indices representing days and their values representing profit." do
+        it "should return an array containing the two indices of which the greatest profit will be earned when bough and sold on those days." do
+            expect(stock_picker([0, 1, 3, 2, 10])).to eq([0,4])
+        end
+    end
 end 
+
+describe "towers_of_hanoi" do
+    
+end
 
 
 
