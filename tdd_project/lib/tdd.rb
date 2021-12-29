@@ -23,5 +23,13 @@ def two_sum(arr)
 end
 
 def my_transpose(matrix)
-   matrix.transpose     
+    num_rows = matrix.length 
+    res = Array.new(num_rows){Array.new(num_rows)}
+
+    (0...num_rows).each do |row|
+        (0...num_rows).each do |col|
+            res[col][row] = matrix[row][col]
+        end 
+    end
+    res
 end
