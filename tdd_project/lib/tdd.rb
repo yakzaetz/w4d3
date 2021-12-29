@@ -23,5 +23,5 @@ def two_sum(arr)
 end
 
 def my_transpose(matrix)
-    
+   matrix.transpose     
 end
