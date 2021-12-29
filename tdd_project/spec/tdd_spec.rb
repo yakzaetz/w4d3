@@ -13,5 +13,15 @@ describe "two_sum" do
         array = [-1, 0, 2, -2, 1]
         expect(two_sum(array)).to eq([[0, 4], [2, 3]])
     end
-
 end
+
+describe "my_transpose" do
+
+    context 
+    it "should take in a 2d array of arrays of the same length as the input array" do
+        expect{my_transpose([[0, 1, 2],[3, 4, 5]])}.to raise("not a square matrix") 
+    end 
+
+    
+end 
+
