@@ -40,9 +40,7 @@ describe "stock_picker" do
     end
 end 
 
-describe "towers_of_hanoi" do
-    
-end
+
 
 
 
